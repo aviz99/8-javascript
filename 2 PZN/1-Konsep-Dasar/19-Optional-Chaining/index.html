@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Optional Chaining</title>
+</head>
+<body>
+    
+
+<script>
+    const person = {
+        address : {
+            country : "Indonesia"
+        }
+    };
+
+    // Pengecekkan untuk mengatasi nulai suatu null atau undefined
+
+    // Menggunakan Optional Chaining
+    let country = person?.address?.country;
+
+    // if(person.address !== undefined && person.adress !== null) {
+    //     country = person.address.country;
+    // }
+
+    // Menggunakan Optional Chaining
+    // alert(person?.address?.country);
+
+    document.writeln(`SUCCESS`);
+
+    document.writeln(`<p>${country}</p>`);
+
+    document.writeln(`SUCCESS`);
+</script>
+</body>
+</html>

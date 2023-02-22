@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Recursive Function</title>
+</head>
+<body>
+    
+
+
+
+<script>
+    function tampilAngka(n) {
+        if( n === 0 ) {
+            return;
+        }
+        console.log(n);
+        tampilAngka(n-1);
+    }
+
+    tampilAngka(10);
+
+    // Rekursif Faktorial
+    function faktorialRekursif(value) {
+        if ( value === 1 ) {
+            return 1;
+        } else {
+            return value * faktorialRekursif(value - 1);
+        }
+    }
+
+    console.log(faktorialRekursif(5));
+
+</script>
+</body>
+</html>

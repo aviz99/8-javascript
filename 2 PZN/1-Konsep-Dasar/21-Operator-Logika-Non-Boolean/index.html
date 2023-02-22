@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Operator Logika Non-Boolean</title>
+</head>
+<body>
+    
+
+
+<script>
+    // OR
+    console.log("Ali" || "");
+    console.log("" || []);
+    console.log("0" || "NOL");
+    console.log(0 || "NOL");
+    console.log(null || "NULL");
+    console.log(undefined || "UNDEFINED");
+    console.log(undefined || NaN);
+
+    // AND
+    console.log("Ali" && "");
+    console.log("" && []);
+    console.log("0" && "NOL");
+    console.log(0 && "NOL");
+    console.log(null && "NULL");
+    console.log(undefined && "UNDEFINED");
+    console.log(undefined && NaN);
+
+
+    const person = {
+        firstName : "",
+        lastName : "Havizni"
+    };
+
+    const name = person.firstName || person.lastName;
+
+    console.log(name);
+    
+</script>
+</body>
+</html>

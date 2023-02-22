@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Destructuring</title>
+</head>
+<body>
+    
+
+
+<script>
+
+    // Destructuring
+    // const names = ["Ali", "David", "Havizni", "Muktar", "Javikri"];
+    // const [firstName, middleName, lastName, ...others] = names;
+
+    // console.info(firstName);
+    // console.info(middleName);
+    // console.info(lastName);
+    // console.info(others);
+
+    // Mengambil data di object
+    // const person = {
+    //     firstName: "Ali",
+    //     lastName: "Havizni",
+    //     age: 26,
+    //     address: {
+    //         street: "Jl. Sukasuka no.0123",
+    //         city: "Jakarta",
+    //         country: "Indonesia"
+    //     },
+    //     hobby: "Anime",
+    // };
+
+    // let {firstName, lastName, age, address: {street, city, country}, ...others} = person;
+
+    // console.info(firstName);
+    // console.info(lastName);
+    // console.info(age);
+    // console.info(street);
+    // console.info(city);
+    // console.info(country);
+    // console.info(others);
+
+    // Destructuring di parameter object
+    // function buatDestructuringParam({firstName, lastName, age, address, ...others}) {
+    //     console.info(firstName);
+    //     console.info(lastName);
+    //     console.info(age);
+    //     console.info(address);
+    //     console.info(others);
+    // }
+
+    // const person = {
+    //     firstName: "Ali",
+    //     lastName: "Havizni",
+    //     age: 26,
+    //     address: {
+    //         street: "Jl. Sukasuka no.0123",
+    //         city: "Jakarta",
+    //         country: "Indonesia"
+    //     },
+    //     hobby: "Anime",
+    // };
+
+    // buatDestructuringParam(person);
+
+    // Destructuring di parameter object
+    // function buatDestructuringArray([first,second]) {
+    //     return first + second;
+    // }
+
+    // console.info(buatDestructuringArray([10, 20]));
+    // console.info(buatDestructuringArray([20, 30]));
+
+    // Default value destructuring pada array
+    // const names = ["Ali"];
+    // const [firstName, middleName = "David", lastName = "Havizni"] = names;
+
+    // console.info(firstName);
+    // console.info(middleName);
+    // console.info(lastName);
+
+    // Default value destructuring pada object
+    // const person = {
+    //     firstName: "Rahmat",
+    //     middleName: "Aji"
+    // };
+
+    // const {firstName, middleName, lastName = "Muktar"} = person;
+
+    // console.info(firstName);
+    // console.info(middleName);
+    // console.info(lastName);
+    
+    // Destructuring dengan menggunakan nama variabel lain
+    const person = {
+        firstName: "Rahmat",
+        middleName: "Aji"
+    };
+
+    const {firstName: namaDepan,
+        middleName: namaTengah,
+        lastName: namaAkhir = "Muktar"} = person;
+
+    console.info(namaDepan);
+    console.info(namaTengah);
+    console.info(namaAkhir);
+</script>
+</body>
+</html>

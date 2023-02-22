@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Operator Logika</title>
+</head>
+<body>
+    
+
+<script>
+    function pengelolaanAngkot(noAngkot, angkotBeroperasi, jmlhAngkot) {
+        for( let i = noAngkot; i <= jmlhAngkot; i++ ) {
+            if( i <= angkotBeroperasi && i != 4 && i != angkotBeroperasi ) {
+                document.writeln("<p>Angkot No." + i + " beroperasi dengan baik.</p>");
+            } else if ( i == 8 || i == 4 || i == angkotBeroperasi ) {
+                document.writeln("<p>Angkot No." + i + " sedang lembur.</p>");
+            } else {
+                document.writeln("<p>Angkot No." + i + " sedang tidak beroperasi.</p>");
+            }
+            
+        }
+    }
+
+    pengelolaanAngkot(1,6,10);
+</script>
+</body>
+</html>

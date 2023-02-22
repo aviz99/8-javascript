@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript This</title>
+</head>
+<body>
+    
+
+
+
+
+<script>
+    function objectPerson(name,age,city) {
+        this.name = name;
+        this.age = age;
+        this.city = city;
+    }
+
+    let person = new objectPerson("Regita Pangestika",22,"Lampung");
+
+    const orang = {
+        name: "Ali",
+        sayHello: function(value) {
+            console.info(`Hello ${value} My name is ${this.name}`);
+        }
+    };
+
+    orang.sayHello("Ali");
+</script>
+</body>
+</html>

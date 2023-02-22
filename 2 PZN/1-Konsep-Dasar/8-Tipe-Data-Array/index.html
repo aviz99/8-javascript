@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Tipe Data Array</title>
+</head>
+<body>
+    
+
+
+<script>
+    let names = [];
+
+    names.push("Ali");
+    names.push("Havizni");
+    names.push("Nanang");
+    names.push("Kosim");
+
+    console.info(names[0]);
+    console.info(names[1]);
+    console.info(names[2]);
+
+    names[0] = "Programmer";
+    names[1] = "Zaman";
+    names[2] = "Programming Unpas";
+
+    
+    delete names[3];
+
+    names.push("Ali Lagi");
+
+    names[3] = "Diubah Lagi";
+    names.push(1,2,3,4,5);
+    names.push(["Ali","Havizni","WPU"]);
+    
+    console.table(names);
+</script>
+</body>
+</html>
