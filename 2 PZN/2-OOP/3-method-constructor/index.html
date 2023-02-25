@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Method Function Constructor</title>
+</head>
+<body>
+    
+
+
+
+<script>
+    function Person() {
+        this.firstName = "";
+        this.lastName = "";
+        this.sayHello = function(name) {
+            console.info(`Hello ${name}, My name is ${this.firstName}`)
+        }
+    }
+
+    const namaAwal = new Person();
+    namaAwal.firstName = "Ali";
+    namaAwal.lastName = "Havizni";
+    namaAwal.sayHello("Raihan");
+
+    const namaAkhir = new Person();
+    namaAkhir.firstName = "Rahmat";
+    namaAkhir.lastName = "Aji";
+    namaAkhir.sayHello("Muktar");
+
+    console.log(namaAwal);
+    console.log(namaAkhir);
+</script>
+</body>
+</html>
